@@ -10,6 +10,11 @@ namespace MRZApi.Controllers
 {
     public class DefaultController : ApiController
     {
+        /// <summary>
+        /// Web Api to validate a MRZ data [HttpPost]
+        /// </summary>
+        /// <param name="m"></param>
+        /// <returns></returns>
         [HttpPost, Route("api/mrz/validate")]
         public IHttpActionResult Validate(MRZForm m)
         {
