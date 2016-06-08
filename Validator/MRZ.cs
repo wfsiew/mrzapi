@@ -243,7 +243,7 @@ namespace Validator
         {
             get
             {
-                return FinalCheckDigit != 0;
+                return IsValidCheckDigit1 & IsValidCheckDigit2 & IsValidCheckDigit3 & IsValidCheckDigit4;
             }
         }
 
